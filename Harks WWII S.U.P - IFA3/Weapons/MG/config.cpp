@@ -90,13 +90,13 @@ class CfgWeapons{
 		class Single: Mode_SemiAuto{
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType{
-				soundSetShot[] = {"PSBREN_Sets","SPE_rifle_med_Tail_SoundSet","Squad762_BulletCasings_Sets"};
+				soundSetShot[] = {"PSBREN_Sets","SPE_rifle2_Tail_SoundSet","Squad762_BulletCasings_Sets"};
 			};
 		};
 		class Full: Mode_FullAuto{
 			class BaseSoundModeType;			
 			class StandardSound: BaseSoundModeType{
-				soundSetShot[] = {"PSBREN_Sets","SPE_rifle_med_Tail_SoundSet","Squad762_BulletCasings_Sets"};
+				soundSetShot[] = {"PSBREN_Sets","SPE_rifle2_Tail_SoundSet","Squad762_BulletCasings_Sets"};
 			};
 		};
 		class Far: Full{
