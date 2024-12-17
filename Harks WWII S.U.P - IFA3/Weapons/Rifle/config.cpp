@@ -160,7 +160,24 @@ class CfgWeapons{
 		class Single: Mode_SemiAuto{
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType{
-				soundSetShot[] = {"Squad_Mosin_Sets","SPAR_17_Tail_SoundSet","Squad762_BulletCasings_Sets","Large_Reflection_DMR_SoundSet"};
+				soundSetShot[] = {"Squad_Mosin_Sets","SPAR_17_Tail_SoundSet","SPE_rifle2_Tail_SoundSet","Squad762_BulletCasings_Sets","Large_Reflection_DMR_SoundSet"};
+			};
+		};
+		class Far: Single{
+			showToPlayer = 0;
+		};
+		class Medium: Single{
+			showToPlayer = 0;
+		};
+		class Short: Single{
+			showToPlayer = 0;
+		};
+	};
+        class LIB_M9130PU: LIB_RIFLE{
+		class Single: Mode_SemiAuto{
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType{
+				soundSetShot[] = {"Squad_Mosin_Sets","SPAR_17_Tail_SoundSet","SPE_rifle2_Tail_SoundSet","Squad762_BulletCasings_Sets","Large_Reflection_DMR_SoundSet"};
 			};
 		};
 		class Far: Single{
