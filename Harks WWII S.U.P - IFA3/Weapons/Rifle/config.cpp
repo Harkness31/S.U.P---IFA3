@@ -298,7 +298,6 @@ class CfgWeapons{
 			showToPlayer = 0;
 		};
 	};		
-};
 	class LIB_SVT_40: LIB_RIFLE{
 		class Single: Mode_SemiAuto{
 			class BaseSoundModeType;
