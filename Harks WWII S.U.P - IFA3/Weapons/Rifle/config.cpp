@@ -3,7 +3,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"PS_AMZ_Lee_enfield","A3_Sounds_F","A3_Sounds_F_exp","A3_Weapons_F","A3_Weapons_f_exp","A3_Weapons_F_Enoch","WW2_Assets_c_Weapons_Sounds_c","WW2_Assets_c_Weapons_InfantryWeapons_c","Sig_soundsa3_COMPAT_IFA3_Rifle","SIG_Sounds","WW2_Assets_c_Characters_XXX_LoadOrder_c", "WW2_Assets_c_Characters_XXX_LoadOrder_c_Germans", "WW2_Assets_c_Characters_XXX_LoadOrder_c_Soviets", "WW2_Assets_c_Characters_XXX_LoadOrder_c_Americans", "WW2_Assets_c_Characters_XXX_LoadOrder_c_British", "WW2_Assets_c_Characters_XXX_LoadOrder_c_Polish", "WW2_Assets_c_Characters_XXX_LoadOrder_c_Civilians", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_Cars", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_ArmoredCars", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_Trucks", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_MediumTanks", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_HeavyTanks", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_ArtilleryTanks", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_AntiAirTanks", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_WheeledAPCs", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_FighterPlanes", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_TransportPlanes", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_Boats", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_LandingBoats", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_Ships", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_AntiTankGuns", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_AntiAirGuns", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_ArtilleryGuns"};
+		requiredAddons[] = {"Sig_soundsa3_COMPAT_IFA3_Rifle","PS_AMZ_Lee_enfield","A3_Sounds_F","A3_Sounds_F_exp","A3_Weapons_F","A3_Weapons_f_exp","A3_Weapons_F_Enoch","WW2_Assets_c_Weapons_Sounds_c","WW2_Assets_c_Weapons_InfantryWeapons_c","Sig_soundsa3_COMPAT_IFA3_Rifle","SIG_Sounds","WW2_Assets_c_Characters_XXX_LoadOrder_c", "WW2_Assets_c_Characters_XXX_LoadOrder_c_Germans", "WW2_Assets_c_Characters_XXX_LoadOrder_c_Soviets", "WW2_Assets_c_Characters_XXX_LoadOrder_c_Americans", "WW2_Assets_c_Characters_XXX_LoadOrder_c_British", "WW2_Assets_c_Characters_XXX_LoadOrder_c_Polish", "WW2_Assets_c_Characters_XXX_LoadOrder_c_Civilians", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_Cars", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_ArmoredCars", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_Trucks", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_MediumTanks", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_HeavyTanks", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_ArtilleryTanks", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_AntiAirTanks", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_WheeledAPCs", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_FighterPlanes", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_TransportPlanes", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_Boats", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_LandingBoats", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_Ships", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_AntiTankGuns", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_AntiAirGuns", "WW2_Assets_c_Vehicles_XXX_LoadOrder_c_ArtilleryGuns"};
 		authors[] = {"Sigliskovich","Harkness31"};
 	};
 };
@@ -36,13 +36,13 @@ class CfgWeapons{
 		class Single: Mode_SemiAuto{
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType{
-				soundSetShot[] = {"PS_FG42_Sets","PS_FG422_Sets","SPAR_17_Tail_SoundSet","Squad556_BulletCasings_Sets"};
+				soundSetShot[] = {"PS_FG42_Sets","PS_FG422_Sets","SPAR_17_Tail_SoundSet","SPE_rifle_med_Tail_SoundSet","Squad556_BulletCasings_Sets","Medium_Reflection_SoundSet"};
 			};
 		};
 		class Full: Mode_FullAuto{
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType{
-				soundSetShot[] = {"PS_FG42_Sets","PS_FG422_Sets","SPAR_17_Tail_SoundSet","Squad556_BulletCasings_Sets"};
+				soundSetShot[] = {"PS_FG42_Sets","PS_FG422_Sets","SPAR_17_Tail_SoundSet","SPE_rifle_med_Tail_SoundSet","Squad556_BulletCasings_Sets","Medium_Reflection_SoundSet"};
 			};
 		};
 		class Far: Full{
@@ -57,7 +57,7 @@ class CfgWeapons{
 		class Single: Mode_SemiAuto{
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType{
-				soundSetShot[] = {"PS_G43_Sets", "SPAR_17_Tail_SoundSet","Squad762_BulletCasings_Sets","Large_Reflection_DMR_SoundSet"};
+				soundSetShot[] = {"PS_G43_Sets","SPE_rifle2_Tail_SoundSet","SPAR_17_Tail_SoundSet","Squad762_BulletCasings_Sets","Large_Reflection_DMR_SoundSet"};
 			};
 		};
 		class Far: Single{
@@ -74,7 +74,7 @@ class CfgWeapons{
 		class Single: Mode_SemiAuto{
 			class BaseSoundModeType;			
 			class StandardSound: BaseSoundModeType{
-				soundSetShot[] = {"PS_G43_Sets", "SPAR_17_Tail_SoundSet","Squad762_BulletCasings_Sets","Large_Reflection_DMR_SoundSet"};
+				soundSetShot[] = {"PS_G43_Sets","SPE_rifle2_Tail_SoundSet","SPAR_17_Tail_SoundSet","Squad762_BulletCasings_Sets","Large_Reflection_DMR_SoundSet"};
 			};
 		};
 		class Far: Single{
@@ -91,7 +91,7 @@ class CfgWeapons{
 		class Single: Mode_SemiAuto{
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType{
-				soundSetShot[] = {"Squad_Kar98k_Sets","Squad762_BulletCasings_Sets","SPAR_17_Tail_SoundSet","Large_Reflection_DMR_SoundSet"};
+				soundSetShot[] = {"Squad_Kar98k_Sets","Squad762_BulletCasings_Sets","SPAR_17_Tail_SoundSet","SPE_rifle2_Tail_SoundSet","Large_Reflection_DMR_SoundSet","Squad762_BulletCasings_Sets"};
 			};
 		};
 		class Far: Single{
@@ -108,7 +108,7 @@ class CfgWeapons{
 		class Single: Mode_SemiAuto{
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType{
-				soundSetShot[] = {"PS_Springfield_Sets","PS_Springfield2_Sets","Large_Reflection_DMR_SoundSet","SPAR_17_Tail_SoundSet","Squad762_BulletCasings_Sets"};
+				soundSetShot[] = {"PS_Springfield_Sets","PS_Springfield2_Sets","Large_Reflection_DMR_SoundSet","SPE_rifle2_Tail_SoundSet","SPAR_17_Tail_SoundSet","Squad762_BulletCasings_Sets"};
 			};
 		};
 		class Far: Single{
@@ -194,13 +194,13 @@ class CfgWeapons{
 		class Single: Mode_SemiAuto{
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType{
-				soundSetShot[] = {"Squad_MP44_Semi_Sets","Squad762_BulletCasings_Sets","Medium_Reflection_SoundSet","SPAR01_tail_SoundSet"};
+				soundSetShot[] = {"Squad_MP44_Semi_Sets","Medium_Reflection_SoundSet","SPAR01_tail_SoundSet","Squad556_BulletCasings_Sets"};
 			};
 		};
 		class Full: Mode_FullAuto{
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType{
-				soundSetShot[] = {"Squad_MP44_Semi_Sets","Squad762_BulletCasings_Sets","Medium_Reflection_SoundSet","SPAR01_tail_SoundSet"};
+				soundSetShot[] = {"Squad_MP44_Semi_Sets","Medium_Reflection_SoundSet","SPAR01_tail_SoundSet","Squad556_BulletCasings_Sets"};
 			};
 		};
 		class Far: Full{
@@ -233,7 +233,7 @@ class CfgWeapons{
 		class Single: Mode_SemiAuto{
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType{
-				soundSetShot[] = {"PS_Springfield_Sets","PS_Springfield2_Sets","Squad762_BulletCasings_Sets","SPAR_17_Tail_SoundSet","Large_Reflection_DMR_SoundSet"};
+				soundSetShot[] = {"PS_Springfield_Sets","PS_Springfield2_Sets","SPE_rifle2_Tail_SoundSet","SPAR_17_Tail_SoundSet","Squad762_BulletCasings_Sets","Large_Reflection_DMR_SoundSet"};
 			};
 		};
 		class Far: Single{
@@ -250,7 +250,7 @@ class CfgWeapons{
 		class Single: Mode_SemiAuto{
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType{
-				soundSetShot[] = {"PS_Springfield_Sets","PS_Springfield2_Sets","Squad762_BulletCasings_Sets","SPAR_17_Tail_SoundSet","Large_Reflection_DMR_SoundSet"};
+				soundSetShot[] = {"PS_Springfield_Sets","PS_Springfield2_Sets","SPE_rifle2_Tail_SoundSet","SPAR_17_Tail_SoundSet","Squad762_BulletCasings_Sets","Large_Reflection_DMR_SoundSet"};
 			};
 		};
 		class Far: Single{
@@ -267,7 +267,7 @@ class CfgWeapons{
 		class Single: Mode_SemiAuto{
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType{
-				soundSetShot[] = {"PS_Springfield_Sets","PS_Springfield2_Sets","Squad762_BulletCasings_Sets","SPAR_17_Tail_SoundSet","Large_Reflection_DMR_SoundSet"};
+				soundSetShot[] = {"PS_Springfield_Sets","PS_Springfield2_Sets","Large_Reflection_DMR_SoundSet","SPE_rifle2_Tail_SoundSet","SPAR_17_Tail_SoundSet","Squad762_BulletCasings_Sets"};
 			};
 		};
 		class Far: Single{
@@ -280,11 +280,30 @@ class CfgWeapons{
 			showToPlayer = 0;
 		};
 	};
+        class LIB_K98ZF39: LIB_SRIFLE{
+		class Single: Mode_SemiAuto{
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType{
+				soundSetShot[] = {"Squad_Kar98k_Sets","Squad762_BulletCasings_Sets","SPAR_17_Tail_SoundSet","SPE_rifle2_Tail_SoundSet","Large_Reflection_DMR_SoundSet","Squad762_BulletCasings_Sets"};
+			};
+			class SilencedSound: BaseSoundModeType{};
+		};
+		class Far: Single{
+			showToPlayer = 0;
+		};
+		class Medium: Single{
+			showToPlayer = 0;
+		};
+		class Short: Single{
+			showToPlayer = 0;
+		};
+	};		
+};
 	class LIB_SVT_40: LIB_RIFLE{
 		class Single: Mode_SemiAuto{
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType{
-				soundSetShot[] = {"Squad_M110_Sets","SPAR_17_Tail_SoundSet","Squad762_BulletCasings_Sets","Large_Reflection_DMR_SoundSet"};			
+				soundSetShot[] = {"Squad_M110_Sets","SPAR_17_Tail_SoundSet","SPE_rifle2_Tail_SoundSet","Squad762_BulletCasings_Sets","Large_Reflection_DMR_SoundSet"};			
 			};
 		};
 		class Far: Single{
